@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-^d6&=*rd#zxii_1o*xulcpcg-x&*iqqv0bniu2mph*9-t6)tt@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["hypertrophy-predictor.onrender.com", "localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -74,15 +74,15 @@ WSGI_APPLICATION = "portfolio_core.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'hypertrophy_db',       
-            'USER': 'admin',                
-            'PASSWORD': '7248971331', # The password you made when creating the DB
-            'HOST': 'hypertrophy-db.ctgmmm8oow64.ap-south-1.rds.amazonaws.com', 
-            'PORT': '3306',
-        }
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "hypertrophy_db",
+        "USER": "admin",
+        "PASSWORD": "7248971331",  # The password you made when creating the DB
+        "HOST": "hypertrophy-db.ctgmmm8oow64.ap-south-1.rds.amazonaws.com",
+        "PORT": "3306",
     }
+}
 
 
 # Password validation
@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
