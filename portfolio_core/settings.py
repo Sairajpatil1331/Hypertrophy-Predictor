@@ -25,7 +25,13 @@ SECRET_KEY = "django-insecure-^d6&=*rd#zxii_1o*xulcpcg-x&*iqqv0bniu2mph*9-t6)tt@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["hypertrophy-predictor.onrender.com", "localhost", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "hypertrophy-predictor.onrender.com",
+    "localhost",
+    "127.0.0.1",
+    "15.206.170.211",
+    "*",
+]
 
 # Application definition
 
